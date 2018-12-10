@@ -1,3 +1,29 @@
+.navbar-header {
+
+	.navbar-toggle {
+		float: left;
+
+		&[aria-expanded="true"] {
+
+			.icon-bar {
+
+				// &:nth-of-type(2) {
+				// 	transform: rotate(45deg);
+				// }
+
+				// &:nth-of-type(3) {
+				// 	opacity: 0
+				// }
+
+				// &:last-of-type {
+				// 	transform: rotate(-45deg);
+				// }
+			}
+		}
+	}
+}
+
+
 .header_holder{
 	background-color: $custom-yellow;
 }
@@ -16,10 +42,12 @@
 	a {
 		text-decoration: none;
 		color: $custom-black;
+        padding: 0 15px !important;
+        border-bottom: 4px solid transparent;
 
 		&:hover{
 			border-bottom: 4px solid $custom-black;
-			padding-bottom: 0;
+            padding: 0 15px;
 			color: $custom-black;
 			background-color: transparent !important;
 		}
@@ -52,31 +80,3 @@
 	}
 }
 
-
-.slick-dots{
-	position: absolute;
-	z-index: 5;
-	bottom:-10px;
-	list-style: none;
-	left: 0;
-	right: 0;
-	display: flex;
-	justify-content: center;
-
-	li{
-		margin: 0 15px;
-		position: relative;
-		border-radius: 50%;
-
-		&:before{
-			content: '';
-			display: inline-block;
-			vertical-align: top;
-			width: 10px;
-			height: 10px;
-			background-color: white;
-			border-radius: 50%;
-		}
-	}
-
-	}

@@ -282,6 +282,10 @@ q:after {
   display: none;
 }
 
+.navbar-header .navbar-toggle {
+  float: left;
+}
+
 .header_holder {
   background-color: #fcdb00;
 }
@@ -300,11 +304,13 @@ q:after {
 .nav a {
   text-decoration: none;
   color: #010101;
+  padding: 0 15px !important;
+  border-bottom: 4px solid transparent;
 }
 
 .nav a:hover {
   border-bottom: 4px solid #010101;
-  padding-bottom: 0;
+  padding: 0 15px;
   color: #010101;
   background-color: transparent !important;
 }
@@ -337,37 +343,6 @@ q:after {
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-}
-
-.slick-dots {
-  position: absolute;
-  z-index: 5;
-  bottom: -10px;
-  list-style: none;
-  left: 0;
-  right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.slick-dots li {
-  margin: 0 15px;
-  position: relative;
-  border-radius: 50%;
-}
-
-.slick-dots li:before {
-  content: '';
-  display: inline-block;
-  vertical-align: top;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border-radius: 50%;
 }
 
 #wrapper {
